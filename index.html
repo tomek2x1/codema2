@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Codema</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__container--primary">
+            <div class="nav__logo logo">
+                <div class="logo__image"><a href="#" class="logo__link">Logo</a></div>
+            </div>
+            <div class="nav__details details">
+                <div class="details__specialist">Specjaliści <i
+                        class="fa fa-chevron-right details__specialist--right-arrow" aria-hidden="true"></i></div>
+                <div class="details__filter">Filtry <span class="details__filter--clear">wyczyść</span></div>
+                <div class="details__evaluation evaluation">
+                    <p class="evaluation__title">Ocena</p>
+                    <label for="five-star">
+                        <input type="radio" id="five-star" class="evaluation__radio" name="star" value="five-star" />
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span class="evaluation__number-place">(<span class="evaluation__number">45</span>)</span>
+                        </span>
+                    </label>
+                    <label for="four-star">
+                        <input type="radio" id="four-star" class="evaluation__radio" name="star" value="four-star" />
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span class="evaluation__number-place">(<span class="evaluation__number">73</span>)</span>
+                        </span>
+                    </label>
+                    <label for="three-star">
+                        <input type="radio" id="three-star" class="evaluation__radio" name="star" value="three-star" />
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span class="evaluation__number-place">(<span class="evaluation__number">33</span>)</span>
+                        </span>
+                    </label>
+                    <label for="two-star">
+                        <input type="radio" id="two-star" class="evaluation__radio" name="star" value="two-star" />
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span class="evaluation__number-place">(<span class="evaluation__number">27</span>)</span>
+                        </span>
+                    </label>
+                    <label for="one-star">
+                        <input type="radio" id="one-star" class="evaluation__radio" name="star" value="one-star" />
+                        <span>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span class="evaluation__number-place">(<span class="evaluation__number">7</span>)</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="nav__container--secondary">
+            <div class="facebook-bgc"><img src="assets/facebook-3.svg" alt="facebook icon" /></div>
+            <p class="copyright">Copyright</p>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__info info">
+                <span class="info__add"><i class="fa fa-plus info__add-plus" aria-hidden="true"></i></span>
+                <span class="info__cart"><img src="assets/shopping cart.svg" alt="shopping cart" /></span>
+                <span class="info__bell"><i class="fa fa-bell-o info__bell" aria-hidden="true"></i></span>
+                <span class="info__user">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="assets/Oval@2x.png" />
+                        <img src="assets/Oval.png" alt="user" class="info__user-image" />
+                    </picture>
+                    <span class="info__user-title">Witaj, <span class="info__user-title--name">Jakub
+                            Kiszczak</span></span>
+                    <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                </span>
+            </div>
+            <div class="header_search search">
+                <input type="text" class="search__input" placeholder="Szukaj" />
+                <select name="department" id="department" class="search__input search__input--select">
+                    <option value="w dziale">w dziale</option>
+                    <option value="marketing">marketing</option>
+                    <option value="automation">automation</option>
+                    <option value="strategy">strategy</option>
+                    <option value="other">jakiś długi tag który się nie mieści</option>
+                </select>
+                <button class="search__btn"><i class="fa fa-search search__btn-icon" aria-hidden="true"></i></button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+                <div class="main__navigation">
+                    <h2>Specjaliści</h2>
+                </div>
+                <div class="main__carts">
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Jakiś super jesfefwefwtszczse tekst</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Joanna Kowalska</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Joanna Kowalska</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Joanna Kowalska</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Joanna Kowalska</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <div class="cart__body">
+                            <div class="cart__bell-wrapper">
+                                <i class="fa fa-bell-o cart__bell" aria-hidden="true"></i>
+                            </div>
+                            <div class="cart__image-wrapper">
+                                <img class="cart__image" src="assets/pexels-andrea-piacquadio-733872.jpg"
+                                    alt="Image specialist" />
+                            </div>
+                            <div class="cart__important-info">
+                                <div class="cart__name">Joanna Kowalska</div>
+                                <div class="cart__stars"><i class="fa fa-star cart__star" aria-hidden="true"></i> <span
+                                        class="cart__score">4.95</span>/5</div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__city"><i class="fa fa-map-marker" aria-hidden="true"></i> Gdańsk</div>
+                                <div class="cart__courses">Kursy: <span class="cart__courses-quantity">10</span></div>
+                            </div>
+                            <div class="cart__specialization">
+                                <div class="cart__department">marketing</div>
+                                <div class="cart__department">automation</div>
+                                <div class="cart__department">jakiś długi tag który się nie mieści</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__nav navfooter">
+                <ul class="navfooter__list">
+                    <li class="navfooter__item">
+                        <a href="#" class="navfooter__link">Regulamin</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="#" class="navfooter__link">Polityka prywatności</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="#" class="navfooter__link">Rejestracja</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="#" class="navfooter__link">Logowanie</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="#" class="navfooter__link">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__author">Codema.io</p>
+        </div>
+    </footer>
+</body>
+
+</html>
